@@ -1,9 +1,11 @@
 <resources>
     <string name="app_name">CoronaCases</string>
     <string name="update">Update</string>
-    <string name="updating_data">Updating data...</string>
+    <string name="updating_data">Updating data…</string>
     <string name="deaths_today">Deaths Today:</string>
     <string name="overall_deaths">Overall Deaths:</string>
     <string name="cases_today">Cases Today:</string>
     <string name="overall_cases">Overall Cases:</string>
+    <string name="coronastatistics">CoronaStatistics</string>
+    <string name="virus_icon">Virus icon</string>
 </resources>

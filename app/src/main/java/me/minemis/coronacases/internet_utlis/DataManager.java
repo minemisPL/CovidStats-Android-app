@@ -41,7 +41,7 @@ public class DataManager {
 
                 String inputLine;
 
-                StringBuffer stringBuffer = new StringBuffer();
+                StringBuilder stringBuffer = new StringBuilder();
 
                 while ((inputLine = in.readLine()) != null){
                     stringBuffer.append(inputLine);

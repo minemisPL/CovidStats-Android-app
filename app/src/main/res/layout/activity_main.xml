@@ -8,8 +8,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CoronaStatistics"
-        android:textSize="40dp"
+        android:text="@string/coronastatistics"
+        android:textSize="40sp"
         android:textColor="#d63924"
         android:id="@+id/txt_coronastats"
         android:padding="15dp"/>
@@ -21,6 +21,7 @@
         android:layout_toEndOf="@+id/txt_coronastats"
         android:layout_alignParentTop="true"
         android:padding="8dp"
+        android:contentDescription="@string/virus_icon"
         />
 
 
@@ -132,7 +133,7 @@
     <ProgressBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/layout_cases_txt"
+        android:layout_toEndOf="@+id/layout_cases_txt"
         android:layout_below="@+id/txt_coronastats"
         android:layout_above="@+id/btn_update"
         android:visibility="gone"
