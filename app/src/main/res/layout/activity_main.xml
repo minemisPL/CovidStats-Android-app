@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CoronaStatistics"
+        android:textSize="40dp"
+        android:textColor="#d63924"
+        android:id="@+id/txt_coronastats"
+        android:padding="15dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:src="@mipmap/virus_icon"
+        android:layout_toEndOf="@+id/txt_coronastats"
+        android:layout_alignParentTop="true"
+        android:padding="8dp"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:id="@+id/layout_cases_txt"
+        android:layout_below="@+id/txt_coronastats"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/overall_cases"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:id="@+id/txt_overallcases"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cases_today"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_below="@+id/txt_overallcases"
+            android:id="@+id/txt_cases_today"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/overall_deaths"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_below="@+id/txt_cases_today"
+            android:id="@+id/txt_overall_deaths"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/deaths_today"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_below="@+id/txt_overall_deaths"
+            android:id="@+id/txt_deaths_today"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/txt_coronastats"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/updating_data"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:id="@+id/overallcases"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/updating_data"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_below="@+id/overallcases"
+            android:id="@+id/cases_today"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/updating_data"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_below="@+id/cases_today"
+            android:id="@+id/overall_deaths"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/updating_data"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_below="@+id/overall_deaths"
+            android:id="@+id/deaths_today"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/layout_cases_txt"
+        android:text="@string/update"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btn_update"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/layout_cases_txt"
+        android:layout_below="@+id/txt_coronastats"
+        android:layout_above="@+id/btn_update"
+        android:visibility="gone"
+        android:id="@+id/progress_bar_loading"/>
+
+
+
+
+
+</RelativeLayout>
